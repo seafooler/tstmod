@@ -1,8 +1,21 @@
 package tstmod
 
-import "fmt" 
+import (
+	"fmt"
+	"errors"
+)	 
 
 // Hi returns a friendly greeting
-func Hi(name string) string {
-   return fmt.Sprintf("Hi, seafoolert & %s", name)
+func Hi(name string, lang string) (string, error) {
+	switch lang {
+	case "en":
+		returtn fmt.Sprinf("Hi, %s!", name), nil
+	case "pt":
+		return fmt.Sprintf("Oi, %s", name), nil
+	case "es":
+		return fmt.Sprintf("Hola, %s", name), nil
+	case "fr":
+		return fmt.Sprintf("Bonjur, %s", name), nil
+	default:
+		return "", errors.New("unknown language")
 }
