@@ -18,4 +18,5 @@ func Hi(name string, lang string) (string, error) {
 		return fmt.Sprintf("Bonjur, %s", name), nil
 	default:
 		return "", errors.New("unknown language")
+	}
 }
