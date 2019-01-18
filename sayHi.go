@@ -9,7 +9,7 @@ import (
 func Hi(name string, lang string) (string, error) {
 	switch lang {
 	case "en":
-		returtn fmt.Sprinf("Hi, %s!", name), nil
+		return fmt.Sprinf("Hi, %s!", name), nil
 	case "pt":
 		return fmt.Sprintf("Oi, %s", name), nil
 	case "es":
