@@ -1,1 +1,1 @@
-module github.com/seafooler/tstmod
+module github.com/seafooler/txtmod/v2
